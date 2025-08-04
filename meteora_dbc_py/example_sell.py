@@ -22,4 +22,5 @@ pool_str = fetch_pool_from_rpc(client, mint_str)
 if pool_str:
     sell(client, payer_keypair, pool_str, percentage, unit_budget, unit_price)
 else:
-    print("No pair address found...")
+    print("No pool address found...")
+
