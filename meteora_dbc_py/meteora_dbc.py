@@ -37,7 +37,6 @@ def buy(
     payer_keypair: Keypair,
     pool_str: str,
     quote_in: float = 0.1,
-    slippage: int = 5, 
     unit_budget: int = 100_000,
     unit_price: int = 1_000_000,
 ) -> bool:
@@ -196,7 +195,6 @@ def sell(
     payer_keypair: Keypair,
     pool_str: str,
     percentage: int = 100,
-    slippage: int = 5, 
     unit_budget: int = 100_000,
     unit_price: int = 1_000_000,
 ) -> bool:
@@ -354,3 +352,4 @@ def sell(
     except Exception as e:
         print("Error occurred during transaction:", e)
         return False
+
